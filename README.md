@@ -5,15 +5,24 @@ Most of the ground work was done by Alex Potsides, [http://www.achingbrain.net](
 
 # Download
 
+Since we are not currently registered with packageist, need to provide the repo info:
+
 Composer:
 
-	"require": {
-		"kenmoini/akismet": "dev-master",
-	},
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/servicescout/akismet"
+    }
+  ],
+
+  "require": 
+    "kenmoini/akismet": "dev-master",
+  },
 
 Or check out the git repository:
 
-	git clone git@github.com:kenmoini/akismet.git
+  git clone git@github.com:kenmoini/akismet.git
 
 ## Changelog
 
