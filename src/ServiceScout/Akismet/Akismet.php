@@ -1,4 +1,4 @@
-<?php namespace Kenmoini\Akismet;
+<?php namespace ServiceScout\Akismet;
 
 /**
  * Akismet anti-comment spam service
