@@ -17,7 +17,7 @@ Composer:
 	],
 
 	"require": {
-		"kenmoini/akismet": "dev-master",
+		"servicescout/akismet": "dev-master",
 	},
 
 Or check out the git repository:
@@ -26,16 +26,9 @@ Or check out the git repository:
 
 ## Changelog
 
-### Version 0.6.1
+Although this is forked from the Ken Moini Laravel package, I've removed all the Laravel support,
+so the Changelog is listed relative to the original code from Alex Potsides, with some of the Ken Moini changes.
 
-* Replaced references to original repo in install instructions
-* Removed Laravel support (this is intended to be a bare bones fork of the Akismet lib)
-* Removed speculative guzzle dependency
-
-### Version 0.6
-
-* Cleaned up README.md.  I know, a big change.	Tests coming next update.
-
-### Version 0.5
-
-* Internal testing version found operational. Deployed to GitHub
+### Version 0.5.1
+* Changed HTTP header blacklist to whitelist
+* Composer support
