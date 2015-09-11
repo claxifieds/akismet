@@ -9,20 +9,20 @@ Since we are not currently registered with packageist, need to provide the repo 
 
 Composer:
 
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/servicescout/akismet"
-    }
-  ],
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/servicescout/akismet"
+		}
+	],
 
-  "require": 
-    "kenmoini/akismet": "dev-master",
-  },
+	"require": {
+		"kenmoini/akismet": "dev-master",
+	},
 
 Or check out the git repository:
 
-  git clone git@github.com:kenmoini/akismet.git
+	git clone git@github.com:kenmoini/akismet.git
 
 ## Changelog
 
@@ -34,7 +34,7 @@ Or check out the git repository:
 
 ### Version 0.6
 
-* Cleaned up README.md.  I know, a big change.  Tests coming next update.
+* Cleaned up README.md.  I know, a big change.	Tests coming next update.
 
 ### Version 0.5
 
