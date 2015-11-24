@@ -199,7 +199,7 @@ class Akismet {
 		$response = $this->sendRequest($this->getQueryString(), $this->wordPressAPIKey . '.rest.akismet.com', '/' . $this->akismetVersion . '/comment-check');
 
 		if($response[1] == 'invalid' && !$this->isKeyValid()) {
-			throw new exception('The Wordpress API key passed to the Akismet constructor is invalid.  Please obtain a valid one from http://wordpress.com/api-keys/');
+			throw new \Exception('The Wordpress API key passed to the Akismet constructor is invalid.  Please obtain a valid one from http://wordpress.com/api-keys/');
 		}
 
 		return ($response[1] == 'true');
@@ -372,7 +372,7 @@ class SocketWriteRead implements AkismetRequestSender {
 		$fs = fsockopen($host, $port, $this->errorNumber, $this->errorString, 3);
 
 		if($this->errorNumber != 0) {
-			throw new Exception('Error connecting to host: ' . $host . ' Error number: ' . $this->errorNumber . ' Error message: ' . $this->errorString);
+			throw new \Exception('Error connecting to host: ' . $host . ' Error number: ' . $this->errorNumber . ' Error message: ' . $this->errorString);
 		}
 
 		if($fs !== false) {

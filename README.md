@@ -29,6 +29,9 @@ Or check out the git repository:
 Although this is forked from the Ken Moini Laravel package, I've removed all the Laravel support,
 so the Changelog is listed relative to the original code from Alex Potsides, with some of the Ken Moini changes.
 
+### Version 0.5.2
+* Fixed namespacing bugs with Exceptions
+
 ### Version 0.5.1
 * Changed HTTP header blacklist to whitelist
 * Composer support
